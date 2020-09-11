@@ -6,7 +6,7 @@
 }
 
 .navBar {
-  background-color: #9a40ee;
+  background-color: #fa5a5a;
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -16,16 +16,29 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
+  position: relative;
+}
+
+.navBar::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#ff5454), color-stop(#920303), to(#ff5454));
+  background: linear-gradient(to right, #ff5454, #920303, #ff5454);
+  z-index: 0;
 }
 
 .navBar .navBtn {
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: blueviolet;
+  background: #f53939;
   padding: 10px;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  margin: 0 0 0 2px;
+  margin: 0 0 0 10px;
+  z-index: 1;
 }
 /*# sourceMappingURL=App.css.map */
