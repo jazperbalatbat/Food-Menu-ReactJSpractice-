@@ -23,15 +23,15 @@
   border-radius: 50px;
   -webkit-animation: scroll 1500ms infinite;
           animation: scroll 1500ms infinite;
+  border: solid 2px #cf430b;
 }
 
 .body .scroll span {
   position: absolute;
   font-size: 2.3rem;
-  top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, -0.3rem);
+          transform: translate(-50%, -0.3rem);
   color: #1a1a1a;
 }
 
