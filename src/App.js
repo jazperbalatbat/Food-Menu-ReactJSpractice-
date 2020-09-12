@@ -14,11 +14,9 @@ const App = () => {
         <Navbar name="ramen" />
         <Navbar name="sushi" />
       </div>
-      <Menucard path="\images\burger\burger2.jpg" title="Classic Burger" info="
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non." />
-      {/* <Menucard path="\images\burger\burger1.jpg" title="Breakfast Burger" /> */}
+      <Menucard path="\images\burger\burger1.jpg" title="Classic Burger" />
+      <Menucard path="\images\burger\burger2.jpg" title="Breakfast Burger" />
+      <Menucard path="\images\burger\burger3.jpg" title="Burger Combo" />
     </div>
   );
 }
