@@ -14,9 +14,6 @@ const App = () => {
         <Navbar name="ramen" />
         <Navbar name="sushi" />
       </div>
-      <Menucard path="\images\burger\burger1.jpg" title="Classic Burger" />
-      <Menucard path="" title="Breakfast Burger" />
-      <Menucard path="" title="Burger Combo" />
     </div>
   );
 }
