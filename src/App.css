@@ -176,7 +176,15 @@
   }
 }
 
-.body .menu-card {
+.body .menuCard {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .menuCard .menu-card {
   background: #242424;
   width: 25%;
   height: 50%;
@@ -191,16 +199,17 @@
   -webkit-box-shadow: 0px 7px 7px -4px #070707;
           box-shadow: 0px 7px 7px -4px #070707;
   margin-left: 5%;
+  display: none;
 }
 
-.body .menu-card .img-card {
+.body .menuCard .menu-card .img-card {
   border-radius: 5px;
   width: 100%;
   height: 59%;
   overflow: hidden;
 }
 
-.body .menu-card .img-card img {
+.body .menuCard .menu-card .img-card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -237,7 +246,7 @@
   }
 }
 
-.body .menu-card h1 {
+.body .menuCard .menu-card h1 {
   color: #ddb530;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -247,7 +256,7 @@
   text-align: center;
 }
 
-.body .menu-card p {
+.body .menuCard .menu-card p {
   text-align: left;
   color: #fff3ca;
   text-transform: lowercase;
@@ -256,7 +265,7 @@
   line-height: .8;
 }
 
-.body .menu-card a {
+.body .menuCard .menu-card a {
   position: relative;
   text-decoration: none;
   padding: 10px;
@@ -271,7 +280,7 @@
   text-shadow: 1px 0 1px black;
 }
 
-.body .menu-card a:hover {
+.body .menuCard .menu-card a:hover {
   background: #ce7f17;
 }
 /*# sourceMappingURL=App.css.map */
