@@ -14,6 +14,10 @@ const App = () => {
         <Navbar name="ramen" />
         <Navbar name="sushi" />
       </div>
+      <Menucard path="/images/burger/burger1.jpg" title="Classic Burger" />
+      <Menucard path="/images/burger/burger1.jpg" title="Breakfast Burger" />
+      <Menucard path="/images/burger/burger1.jpg" title="Burger Combo" />
+      Lorem20
     </div>
   );
 }
