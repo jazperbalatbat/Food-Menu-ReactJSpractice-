@@ -8,6 +8,7 @@
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
+  height: 10px;
 }
 
 /* Track */
@@ -17,12 +18,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #141414;
+  background: #423600;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #423600;
+  background: #141414;
 }
 
 .body {
@@ -117,6 +118,8 @@
 }
 
 .body .navBar .navBtn {
+  border: none;
+  outline-width: 0;
   color: #131313;
   background: #ddb530;
   padding: 10px;
@@ -128,6 +131,7 @@
   z-index: 1;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
+  cursor: pointer;
   -webkit-box-shadow: 0px 1px 4px black;
           box-shadow: 0px 1px 4px black;
 }
