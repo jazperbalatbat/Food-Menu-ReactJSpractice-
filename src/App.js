@@ -21,11 +21,42 @@ class App extends Component {
         title: 'Burger Combo',
         path: '/images/burger/burger1.jpg'
       }
+    ],
+    pasta: [
+      {
+        id: 1,
+        title: 'White Pasta',
+        path: '/images/pasta/pasta1.jpg'
+      },
+      {
+        id: 2,
+        title: 'Tomato Pasta',
+        path: '/images/pasta/pasta1.jpg'
+      },
+      {
+        id: 3,
+        title: 'Bean Pasta',
+        path: '/images/pasta/pasta1.jpg'
+      }
     ]
+  }
+  pastas = () => {
+    this.menus(this.state.pasta);
+  }
+  menus = (x) => {
+    if (!x) {
+      return this.state.burger;
+    }
+    else {
+      return x;
+    }
   }
   render() {
     return (
-      <Menucard className="sample" menu={this.state.burger} />
+      <div>
+        <button onClick={this.pastas()}>click</button>
+        <Menucard className="sample" menu={this.menus()} />
+      </div>
     );
   }
 }
