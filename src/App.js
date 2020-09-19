@@ -1,64 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Menucard from './menu';
-import '../src/App.css'
-let mc = document.querySelectorAll(".burger");
+import state from './object';
+import '../src/App.css';
 
-class App extends Component {
-  state = {
-    burger: [
-      {
-        id: 1,
-        title: 'Classic Burger',
-        path: '/images/burger/burger1.jpg'
-      },
-      {
-        id: 2,
-        title: 'Breakfast Burger',
-        path: '/images/burger/burger1.jpg'
-      },
-      {
-        id: 3,
-        title: 'Burger Combo',
-        path: '/images/burger/burger1.jpg'
-      }
-    ],
-    pasta: [
-      {
-        id: 1,
-        title: 'White Pasta',
-        path: '/images/pasta/pasta1.jpg'
-      },
-      {
-        id: 2,
-        title: 'Tomato Pasta',
-        path: '/images/pasta/pasta1.jpg'
-      },
-      {
-        id: 3,
-        title: 'Bean Pasta',
-        path: '/images/pasta/pasta1.jpg'
-      }
-    ]
+function App() {
+  let x = state.pasta;
+  const burgerBtn = e => {
+    x = state.burger;
+    alert(x);
   }
-  pastas = () => {
-    this.menus(this.state.pasta);
-  }
-  menus = (x) => {
-    if (!x) {
-      return this.state.burger;
-    }
-    else {
-      return x;
-    }
-  }
-  render() {
-    return (
-      <div>
-        <button onClick={this.pastas()}>click</button>
-        <Menucard className="sample" menu={this.menus()} />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <button onClick={burgerBtn}>{state.burger[0].origin}</button>
+      {x.map(item => (
+        <Menucard key={item.id} title={item.title} image={item.path} />
+      ))}
+    </div>
+  );
 }
 
 export default App;

@@ -1,23 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Menucard extends Component {
-    render() {
-        console.log(this.props.menu);
-        return this.props.menu.map((item) => (
-            <div key={item.id} style={div}>
-                <img src={item.path} style={img} />
-                <h1>{item.title}</h1>
+function Menucard({ title, image }) {
+    return (
+        <div style={div}>
+            <img src={image} style={img} />
+            <h1>{title}</h1>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
-                 </p>
-
-            </div>
-        ));
-
-    }
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
+            </p>
+        </div>
+    );
 }
 
 //css variables
