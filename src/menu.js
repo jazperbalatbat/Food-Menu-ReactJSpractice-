@@ -1,4 +1,5 @@
 import React from 'react';
+import state from './object';
 
 
 function Menucard({ title, image }) {
