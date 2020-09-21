@@ -21,7 +21,7 @@ function App() {
     setItem(state.sushi);
   }
   return (
-    <div>
+    <div className="body">
       <div className="nav">
         <ul>
           <li onClick={burger}>{state.burger[0].origin}</li>
@@ -31,7 +31,7 @@ function App() {
           <li onClick={sushi}>{state.sushi[0].origin}</li>
         </ul>
       </div>
-      <div>
+      <div className="menu">
         {item.map(item => (
           <Menucard key={item.id} title={item.title} image={item.path} />
         ))}

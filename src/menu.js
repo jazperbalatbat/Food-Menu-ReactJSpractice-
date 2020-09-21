@@ -1,10 +1,11 @@
 import React from 'react';
 
+import '../src/App.css';
 
 function Menucard({ title, image }) {
     return (
-        <div style={div}>
-            <img src={image} style={img} />
+        <div className="menu_item">
+            <img src={image} />
             <h1>{title}</h1>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores ipsam non.
@@ -15,18 +16,4 @@ function Menucard({ title, image }) {
     );
 }
 
-//css variables
-const div = {
-    width: '600px',
-    height: '300px',
-    background: 'goldenrod',
-    margin: '5px',
-    padding: '5px'
-}
-const img = {
-    width: '100%',
-    height: '60%',
-    objectFit: 'cover'
-
-}
 export default Menucard;
