@@ -20,6 +20,37 @@ function App() {
   const sushi = e => {
     setItem(state.sushi);
   }
+  //searchbar text input
+  const [sbtext, setSbtext] = useState('');
+  const sbtextOC = e => {
+    setSbtext(e.target.value);
+  }
+  //searchbar submit
+  const sbbtnOC = e => {
+    e.preventDefault();
+    switch (sbtext) {
+      case 'pasta':
+        setItem(state[sbtext]);
+        break;
+      case 'pizza':
+        setItem(state[sbtext]);
+        break;
+      case 'burger':
+        setItem(state[sbtext]);
+        break;
+      case 'ramen':
+        setItem(state[sbtext]);
+        break;
+      case 'sushi':
+        setItem(state[sbtext]);
+        break;
+      default:
+        alert('error');
+        setSbtext('');
+        break;
+    }
+
+  }
   return (
     <div className="body">
       <div className="nav">
@@ -30,10 +61,14 @@ function App() {
           <li onClick={ramen}>{state.ramen[0].origin}</li>
           <li onClick={sushi}>{state.sushi[0].origin}</li>
         </ul>
+        <form action="" className="searchbar" onSubmit={sbbtnOC}>
+          <input type="text" className="sb_text" onChange={sbtextOC} value={sbtext} />
+          <input type="submit" value="SEARCH" className="sb_btn" />
+        </form>
       </div>
       <div className="menu">
         {item.map(item => (
-          <Menucard key={item.id} title={item.title} image={item.path} />
+          <Menucard key={item.title} title={item.title} image={item.path} />
         ))}
       </div>
     </div>
