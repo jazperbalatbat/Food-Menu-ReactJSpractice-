@@ -8,12 +8,12 @@ const state = {
         {
             origin: 'burger',
             title: 'Breakfast Burger',
-            path: '/images/burger/burger1.jpg'
+            path: '/images/burger/burger2.jpg'
         },
         {
             origin: 'burger',
             title: 'Burger Combo',
-            path: '/images/burger/burger1.jpg'
+            path: '/images/burger/burger3.jpg'
         }
     ],
     pasta: [{
@@ -24,12 +24,12 @@ const state = {
         {
             origin: 'pasta',
             title: 'Tomato Pasta',
-            path: '/images/pasta/pasta1.jpg'
+            path: '/images/pasta/pasta2.jpg'
         },
         {
             origin: 'pasta',
             title: 'Bean Pasta',
-            path: '/images/pasta/pasta1.jpg'
+            path: '/images/pasta/pasta3.jpg'
         }
     ],
     pizza: [{
@@ -40,12 +40,12 @@ const state = {
         {
             origin: 'pizza',
             title: 'Cheese Pizza',
-            path: '/images/pizza/pizza1.jpg'
+            path: '/images/pizza/pizza2.jpg'
         },
         {
             origin: 'pizza',
             title: 'Olives Pizza',
-            path: '/images/pizza/pizza1.jpg'
+            path: '/images/pizza/pizza3.jpg'
         }
     ],
     ramen: [{
@@ -56,12 +56,12 @@ const state = {
         {
             origin: 'ramen',
             title: 'Spicy Ramen',
-            path: '/images/ramen/ramen1.jpg'
+            path: '/images/ramen/ramen2.jpg'
         },
         {
             origin: 'ramen',
             title: 'Original Ramen',
-            path: '/images/ramen/ramen1.jpg'
+            path: '/images/ramen/ramen3.jpg'
         }
     ],
     sushi: [{
@@ -72,12 +72,12 @@ const state = {
         {
             origin: 'sushi',
             title: 'Cabbage Siumai',
-            path: '/images/sushi/sushi1.jpg'
+            path: '/images/sushi/sushi2.jpg'
         },
         {
             origin: 'sushi',
             title: 'Salmon Sushi',
-            path: '/images/sushi/sushi1.jpg'
+            path: '/images/sushi/sushi3.jpg'
         }
     ]
 }
