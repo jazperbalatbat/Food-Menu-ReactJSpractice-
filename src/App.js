@@ -31,18 +31,23 @@ function App() {
     switch (sbtext) {
       case 'pasta':
         setItem(state[sbtext]);
+        setSbtext('');
         break;
       case 'pizza':
         setItem(state[sbtext]);
+        setSbtext('');
         break;
       case 'burger':
         setItem(state[sbtext]);
+        setSbtext('');
         break;
       case 'ramen':
         setItem(state[sbtext]);
+        setSbtext('');
         break;
       case 'sushi':
         setItem(state[sbtext]);
+        setSbtext('');
         break;
       default:
         alert('error');
