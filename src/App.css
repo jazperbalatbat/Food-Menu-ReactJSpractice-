@@ -80,13 +80,11 @@
 .body .nav .searchbar {
   position: absolute;
   padding: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), color-stop(#221a07), to(#302509));
-  background: linear-gradient(#1d1d1d, #221a07, #302509);
+  background: #1d1d1d;
   top: 99%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-radius: 0 0 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,6 +103,7 @@
   text-transform: uppercase;
   padding: 5px;
   font-weight: bolder;
+  border-radius: 0 0 0 0;
 }
 
 .body .nav .searchbar .sb_text {
@@ -115,6 +114,10 @@
 
 .body .nav .searchbar .sb_btn {
   background: goldenrod;
+  border-radius: 15px 0 0 15px;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  cursor: pointer;
 }
 
 .body .menu {
